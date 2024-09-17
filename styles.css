@@ -1,52 +1,49 @@
-/* Estilo general del cuerpo */
-
 body {
-    font-family: "orbitron",sans-serif;
+    font-family: "orbitron", sans-serif;
     color: #333;
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.6em;
     margin: 0;
     padding: 0;
     background-color: #fff;
-    /* Color de fondo suave */
+    background-image: url(images/TiendaRopaFondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-/* Estilo para los encabezados h1 */
 h1 {
     font-size: 2.5rem;
+    font-weight: 900;
     margin-bottom: 1rem;
     line-height: 1.3;
-    color: #222;
-    /* Color ligeramente más oscuro para mejor contraste */
+    color: #222222;
+
 }
 
-/* Estilo para los párrafos */
 p {
+    font-style: normal;
     margin-bottom: 1.6em;
     font-size: 1rem;
-    /* Tamaño de fuente más consistente */
+
 }
 
-/* Contenedor principal para centrar el contenido */
 .container {
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
     padding: 1rem;
-    /* Agregar un poco de relleno */
+
 }
 
-/* Estilo para el encabezado */
 .header {
-    background: #333;
+    background: #1f2021;
     color: white;
     padding: 1rem 1.5rem;
     /* Ajuste del relleno */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Agregar una sombra sutil */
 }
 
-/* Estilo para los enlaces en el encabezado */
 .header a {
     color: white;
     text-decoration: none;
@@ -58,6 +55,18 @@ p {
     color: #f5a623;
     /* Color de resaltado suave en el hover */
 }
+
+.imagenS {
+    width: 90px;
+    border-radius: 100%;
+    border: 3px solid#82c115;
+    transition: border-color 0.3s;
+}
+
+.imagenS:hover {
+    border-color: #ff0404;
+}
+
 
 /* Contenedor para el logo y la navegación */
 .logo-nav-container {
@@ -76,7 +85,7 @@ p {
 
 .navegation ul li {
     margin-right: 1rem;
-    /* Espaciado entre elementos de la lista */
+    /* Espaciado entre ICONOS DE LISTA */
 }
 
 .navegation ul li:last-child {
@@ -97,7 +106,7 @@ p {
 .navegation ul li a:hover {
     background: #555;
     /* Color de fondo al pasar el ratón */
-    color: #f5a623;
+    color: #82c115;
     /* Color del texto al pasar el ratón */
 }
 
