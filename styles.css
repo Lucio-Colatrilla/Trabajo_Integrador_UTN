@@ -1,15 +1,28 @@
 body {
-    font-family: "orbitron", sans-serif;
+    font-family: "Orbitron", sans-serif;
     color: #333;
     font-size: 1rem;
     line-height: 1.6em;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #fff; /* Color de fondo por defecto */
+    position: relative; /* Necesario para el z-index */
+}
+
+.imagenF {
     background-image: url(images/TiendaRopaFondo.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-
+    background-position: center center;
+    height: 1800px; /* Altura de la imagen de fondo */
+    background-attachment: fixed; /* Imagen fija al hacer scroll */
+    background-size: cover; /* Cubrir todo el contenedor */
+    opacity: 80%; /* Opacidad de la imagen */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0; /* Alinear al principio del contenedor */
+    left: 0; /* Alinear al principio del contenedor */
+    right: 0; /* Alinear al final del contenedor */
+    bottom: 0; /* Alinear al final del contenedor */
+    z-index: -1; /* Colocar detrás del contenido */
 }
 
 h1 {
@@ -17,15 +30,14 @@ h1 {
     font-weight: 900;
     margin-bottom: 1rem;
     line-height: 1.3;
-    color: #222222;
-
+    color: #000000;
 }
 
 p {
+    color: #0c0606;
     font-style: normal;
     margin-bottom: 1.6em;
     font-size: 1rem;
-
 }
 
 .container {
@@ -33,100 +45,89 @@ p {
     max-width: 900px;
     margin: 0 auto;
     padding: 1rem;
-
 }
 
 .header {
-    background: #1f2021;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente para la cabecera */
     color: white;
-    padding: 1rem 1.5rem;
-    /* Ajuste del relleno */
+    padding: 1rem 1.5rem; /* Ajuste del relleno */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header a {
     color: white;
     text-decoration: none;
-    transition: color 0.1s ease;
-    /* Transición suave para el color */
+    transition: color 0.1s ease; /* Transición suave para el color */
 }
 
 .header a:hover {
-    color: #f5a623;
-    /* Color de resaltado suave en el hover */
+    color: #f5a623; /* Color de resaltado suave en el hover */
 }
 
 .imagenS {
     width: 90px;
-    border-radius: 100%;
-    border: 3px solid#82c115;
-    transition: border-color 0.3s;
+    border-radius: 50%; /* Cambiado a '50%' para redondear completamente */
+    border: 3px solid #a2ff00; /* Espacio entre 'solid' y el color */
+    transition: border-color 0.3s ease; /* Transición suave */
 }
 
 .imagenS:hover {
-    border-color: #ff0404;
+   border-color:#ff0404; /* Color del borde al pasar el ratón */
 }
-
 
 /* Contenedor para el logo y la navegación */
 .logo-nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   display: flex;
+   justify-content: space-between;
+   align-items: center; /* Alinear verticalmente */
 }
 
 /* Estilo para la navegación */
 .navegation ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
+   margin: 0;
+   padding: 0;
+   list-style-type: none; /* Mejorar la legibilidad */
+   display: flex; /* Flexbox para disposición horizontal */
 }
 
 .navegation ul li {
-    margin-right: 1rem;
-    /* Espaciado entre ICONOS DE LISTA */
+   margin-right: 1rem; /* Espaciado entre los elementos de lista */
 }
 
 .navegation ul li:last-child {
-    margin-right: 0;
-    /* Eliminar margen para el último elemento */
+   margin-right: 0; /* Eliminar margen para el último elemento */
 }
 
 .navegation ul li a {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: white;
-    border-radius: 0.25rem;
-    /* Bordes redondeados para los enlaces */
-    transition: background 0.3s ease, color 0.3s ease;
-    /* Transiciones suaves */
+   display: block; /* Hacer que el enlace ocupe todo el espacio del elemento de lista */
+   padding: 0.5rem 1rem; /* Espaciado interno */
+   color:white; 
+   border-radius:.25rem; 
+   transition:.3s ease background-color, .3s ease color; 
 }
 
 .navegation ul li a:hover {
-    background: #555;
-    /* Color de fondo al pasar el ratón */
-    color: #82c115;
-    /* Color del texto al pasar el ratón */
+   background-color:#555; 
+   color:#82c115; 
 }
 
 /* Estilos adicionales opcionales para mejorar el diseño */
 .container img {
-    max-width: 100%;
-    height: auto;
+   max-width :100%; 
+   height:auto ; 
 }
 
 button {
-    background: #333;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.3s ease;
+   background-color:#303130 ; 
+   color:white ; 
+   border:none ; 
+   padding:.75rem 1.5rem ; 
+   border-radius:.25rem ; 
+   cursor:pointer ; 
+   font-size :1rem ; 
+   transition :background-color .3s ease ; 
 }
 
 button:hover {
-    background: #555;
+   background-color:#555 ; 
 }
